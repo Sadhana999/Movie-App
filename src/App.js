@@ -18,7 +18,7 @@ function App() {
 
 
   const getMovieRequest = async (searchValue, pageNumber) => {
-    const url = `//www.omdbapi.com/?s=${searchValue}&apikey=e921b492&page=${pageNumber}`;
+    const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=e921b492&page=${pageNumber}`;
     const response = await fetch(url);
     const responseJson = await response.json();
     const count = responseJson.totalResults;
